@@ -1,0 +1,7 @@
+@import '../../components/header/__title/header__title.css';
+
+.header {
+  padding: 96px 0 77px;
+
+  background-color: #ffffff;
+}

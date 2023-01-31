@@ -1,0 +1,10 @@
+@import './__title/footer__title.css';
+@import './__description/footer__description.css';
+
+.footer {
+  padding: 71px 0 136px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}

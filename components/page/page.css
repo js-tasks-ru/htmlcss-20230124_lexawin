@@ -1,61 +1,9 @@
+@import '../../components/header/header.css';
+@import '../../components/main-content/main-content.css';
+@import '../../components/footer/footer.css';
+
 .page {
-  width: 1440px;
-}
-
-.header {
-  padding: 96px 0 77px;
-
-  background-color: #ffffff;
-}
-
-.header__title {
-  margin: 0;
-  margin-left: 160px;
-
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 64px;
-  color: #212429;
-}
-
-.main-content {
-  height: 1034px;
-
-  background-color: #f9fafc;
-
-  border-top: 1px solid #dde2e5;
-  border-bottom: 1px solid #dde2e5;
-}
-
-.footer {
-  padding: 71px 0 136px;
-
-  background-color: #ffffff;
-}
-
-.footer__title {
-  margin: 0;
-  margin-bottom: 32px;
-
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 48px;
-  text-align: center;
-  color: #212429;
-}
-
-.footer__description {
-  margin: 0;
-
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
   color: #212429;
 }

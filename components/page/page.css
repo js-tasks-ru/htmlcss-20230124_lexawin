@@ -1,9 +1,0 @@
-@import '../../components/header/header.css';
-@import '../../components/main-content/main-content.css';
-@import '../../components/footer/footer.css';
-
-.page {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  color: #212429;
-}

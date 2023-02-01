@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.button:disabled {
+  cursor: default;
+}
+
 /* Primary */
 .button_primary {
   color: #ffffff;

@@ -1,18 +1,30 @@
 /* Стилизация кнопки */
 .button {
-  width: 189px;
+  min-width: 189px;
   height: 48px;
+  padding: 15px 8px;
 
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 
   border-radius: 8px;
   cursor: pointer;
+
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
+    border 200ms ease-in-out;
 }
 
 .button:disabled {
+  opacity: 0.5;
+
   cursor: default;
+  pointer-events: none;
+}
+
+.button:active {
+  transition: none;
 }
 
 /* Primary */
@@ -21,23 +33,14 @@
 
   background-color: #4263eb;
   border: none;
-
-  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_primary:hover {
   background-color: #2342c0;
 }
 
-.button_primary:disabled {
-  background-color: #4263eb;
-  opacity: 0.5;
-}
-
 .button_primary:active {
   background-color: #4263eb;
-
-  transition: none;
 }
 
 /* Secondary */
@@ -46,23 +49,14 @@
 
   background-color: #7048e8;
   border: none;
-
-  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_secondary:hover {
   background-color: #5028c6;
 }
 
-.button_secondary:disabled {
-  background-color: #7048e8;
-  opacity: 0.5;
-}
-
 .button_secondary:active {
   background-color: #7048e8;
-
-  transition: none;
 }
 
 /* Alternate */
@@ -71,21 +65,12 @@
 
   background-color: #ffffff;
   border: 1px solid #acb5bd;
-
-  transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
 }
 
 .button_alternate:hover {
   border-color: #212429;
 }
 
-.button_alternate:disabled {
-  border-color: #acb5bd;
-  opacity: 0.3;
-}
-
 .button_alternate:active {
   border-color: #acb5bd;
-
-  transition: none;
 }

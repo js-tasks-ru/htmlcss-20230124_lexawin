@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+  </head>
+  <body>
+    <div class="accordion">
+      <!-- Item 1 -->
+      <details class="accordion__item">
+        <summary class="accordion__summary">The original trilogy</summary>
+        <div class="accordion__content">
+          <ol class="accordion__list">
+            <li>Episode IV - A New Hope</li>
+            <li>Episode V - The Empire Strikes Back</li>
+            <li>Episode VI - Return of the Jedi</li>
+          </ol>
+        </div>
+      </details>
+
+      <!-- Item 2 -->
+      <details class="accordion__item">
+        <summary class="accordion__summary">The Prequel Trilogy</summary>
+        <div class="accordion__content">
+          <ol class="accordion__list">
+            <li>Episode I - The Phantom Menace</li>
+            <li>Episode II - Attack of the Clones</li>
+            <li>Episode III - Revenge of the Sith</li>
+          </ol>
+        </div>
+      </details>
+
+      <!-- Item 3 -->
+      <details class="accordion__item">
+        <summary class="accordion__summary">A trilogy of sequels</summary>
+        <div class="accordion__content">
+          <ol class="accordion__list">
+            <li>Episode VII - The Force Awakens</li>
+            <li>Episode VIII - The Last Jedi</li>
+            <li>Episode IX - The Rise of Skywalker</li>
+          </ol>
+        </div>
+      </details>
+    </div>
+  </body>
 </html>

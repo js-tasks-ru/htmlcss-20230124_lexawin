@@ -8,6 +8,7 @@
 
 .accordion__item {
   margin-bottom: 8px;
+  padding: 24px 50px 24px 32px;
 
   background-color: #ffffff;
   border: 1px solid #acb5bd;
@@ -18,29 +19,28 @@
   margin-bottom: 0;
 }
 
-.accordion__item[open] > .accordion__summary {
-  padding-bottom: 16px;
+.accordion__item[open] {
+  padding-bottom: 32px;
 }
 
 .accordion__summary {
-  padding: 24px 50px 24px 32px;
-
   color: #212429;
 
   cursor: pointer;
+}
+
+.accordion__item[open] > .accordion__summary {
+  margin-bottom: 16px;
 }
 
 .accordion__summary::marker {
   content: '';
 }
 
-.accordion__text {
-  margin: 0;
-  /*
-  На макете отступ слева 32px,
-  но т.к. у меня список с маркерами, сделал 50px.
-  */
-  padding: 0 50px 32px;
-
+.accordion__content {
   color: #495057;
+}
+
+.accordion__list {
+  margin: 0;
 }

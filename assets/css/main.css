@@ -14,6 +14,7 @@
   --pink: #f784ad;
   --purple: #7048e8;
   --blue: #374fc7;
+  --blue-2: #4263eb;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -25,6 +26,8 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --bg-primary: var(var(--white));
 }
 
 body {

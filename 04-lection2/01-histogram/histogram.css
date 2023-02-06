@@ -4,8 +4,7 @@
 }
 
 .histogram {
-  padding: 24px;
-  padding-top: 16px;
+  padding: 16px 24px 24px;
 
   font-family: 'Inter', sans-serif;
   color: var(--black);
@@ -17,7 +16,7 @@
 
 .histogram__header {
   display: flex;
-  height: 27px;
+  /* height: 27px; */
   justify-content: space-between;
   margin-bottom: 3px;
 }

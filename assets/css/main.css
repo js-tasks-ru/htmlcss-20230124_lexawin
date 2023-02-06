@@ -19,12 +19,17 @@
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
+  --grey-5: #e2e6e8;
+  --grey-6: #f3f5f5;
+  --grey-7: #e3e7ea;
 
   --error: var(--red);
   --success: var(--blue);
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --bg-primary: var(var(--white));
 }
 
 body {

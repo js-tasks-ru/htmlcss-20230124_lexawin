@@ -2,9 +2,9 @@
   padding: 71px 0 136px;
 
   font-family: 'Inter', sans-serif;
-  color: #212429;
+  color: var(--black);
 
-  background-color: #ffffff;
+  background-color: var(--bg-primary);
 }
 
 .footer__title {

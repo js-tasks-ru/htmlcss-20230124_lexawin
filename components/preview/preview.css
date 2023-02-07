@@ -1,5 +1,5 @@
 .preview {
-  padding: 68px 0 204px;
+  padding: 68px 0;
 
   background-color: var(--bg-preview);
 
@@ -7,14 +7,11 @@
   border-bottom: 1px solid var(--grey-2);
 }
 
-.preview__row {
+.preview__inner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  margin-bottom: 30px;
-}
-
-.preview__row:last-child {
-  margin-bottom: 0;
 }
 
 .preview__card {

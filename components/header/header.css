@@ -2,9 +2,9 @@
   padding: 96px 0 77px;
 
   font-family: 'Inter', sans-serif;
-  color: #212429;
+  color: var(--black);
 
-  background-color: #ffffff;
+  background-color: var(--bg-primary);
 }
 
 .header__title {

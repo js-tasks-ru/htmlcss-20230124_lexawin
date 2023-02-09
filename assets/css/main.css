@@ -7,6 +7,7 @@
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 :root {
   --white: #ffffff;
@@ -22,6 +23,7 @@
   --grey-5: #e2e6e8;
   --grey-6: #f3f5f5;
   --grey-7: #e3e7ea;
+  --grey-8: #f9fafc;
 
   --error: var(--red);
   --success: var(--blue);
@@ -30,8 +32,14 @@
   --secondary: var(--purple);
 
   --bg-primary: var(--white);
+  --bg-preview: var(--grey-8);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
 }

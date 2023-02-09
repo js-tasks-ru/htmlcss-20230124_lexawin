@@ -8,14 +8,19 @@
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
+@import '../../components/component-page/component-page.css';
+@import '../../components/menu/menu.css';
+@import '../../components/component/component.css';
 
 :root {
   --white: #ffffff;
   --black: #212429;
+  --black-2: #000000;
   --pink: #f784ad;
   --purple: #7048e8;
   --blue: #374fc7;
   --red: #f03d3e;
+  --red-2: #d84910;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;

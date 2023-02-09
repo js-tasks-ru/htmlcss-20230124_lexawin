@@ -1,0 +1,24 @@
+.component-page {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 36px;
+
+  background-color: var(--bg-preview);
+}
+
+.component-page__header {
+  padding: 0;
+  height: 82px;
+}
+
+.component-page__inner {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 246px 1fr;
+  column-gap: 56px;
+}
+
+.component-page__footer {
+  padding: 56px 0;
+}

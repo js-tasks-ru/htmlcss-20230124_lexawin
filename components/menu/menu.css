@@ -1,0 +1,44 @@
+.menu {
+  font-family: 'Inter', sans-serif;
+}
+
+.menu__header {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black-2);
+}
+
+.menu__items {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  list-style-type: none;
+}
+
+.menu__item {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--black);
+}
+
+.menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.menu__item_active {
+  color: var(--red-2);
+}
+
+.menu__footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--black);
+}

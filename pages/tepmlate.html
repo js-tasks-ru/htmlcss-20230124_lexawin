@@ -6,34 +6,38 @@
     <link rel="stylesheet" href="../assets/css/main.css";
   </head>
   <body>
-    <div class="component-page">
-      <div class="header component-page__header"></div>
+    <div class="page page_inner">
+      <div class="header"></div>
 
-      <div class="component-page__main">
+      <div class="main">
         <div class="container">
-          <div class="component-page__inner">
+          <div class="component-main">
             <div class="menu">
               <h2 class="menu__header">Components</h2>
-              <ul class="menu__items">
-                <li class="menu__item">Modal</li>
-                <li class="menu__item">Tooltip</li>
-                <li class="menu__item">Avatar</li>
-                <li class="menu__item">Calendar</li>
-                <li class="menu__item menu__item_active">Histogram</li>
-                <li class="menu__item">Custom form elements</li>
-              </ul>
-              <p class="menu__footer">Main page</p>
+              <nav class="menu__navigation">
+                <a href="#" class="menu__item menu__link">Modal</a>
+                <a href="#" class="menu__item menu__link">Tooltip</a>
+                <a href="#" class="menu__item menu__link">Avatar</a>
+                <a href="#" class="menu__item menu__link">Calendar</a>
+                <a href="#" class="menu__item menu__link menu__item_active"
+                  >Histogram</a
+                >
+                <a href="#" class="menu__item menu__link"
+                  >Custom form elements</a
+                >
+              </nav>
+              <p><a href="#" class="menu__footer menu__link">Main page</a></p>
             </div>
 
-            <div class="component">
-              <h1 class="component__header">Histogram</h1>
-              <div class="component__content"></div>
+            <div class="component-description">
+              <h1 class="component-description__header">Histogram</h1>
+              <div class="component-description__content"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="footer footer_transparent component-page__footer">
+      <div class="footer footer_transparent">
         <div class="container">
           <p class="footer__text footer__text_upper">
             Reusable component library

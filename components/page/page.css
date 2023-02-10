@@ -4,6 +4,15 @@
   height: 100%;
 }
 
+.page_inner {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 36px;
+
+  background-color: var(--bg-preview);
+}
+
 .page__preview {
   flex-grow: 1;
 }

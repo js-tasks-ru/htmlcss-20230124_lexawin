@@ -25,6 +25,8 @@
   --grey-6: #f3f5f5;
   --grey-7: #e3e7ea;
   --grey-8: #f9fafc;
+  --grey-9: #c4c4c4;
+  --grey-10: #334d6e;
 
   --error: var(--red);
   --success: var(--blue);
@@ -34,6 +36,7 @@
 
   --bg-primary: var(--white);
   --bg-preview: var(--grey-8);
+  --bg-modal: var(--grey-9);
 }
 
 body {

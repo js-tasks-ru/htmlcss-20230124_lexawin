@@ -36,7 +36,7 @@
 
   --bg-primary: var(--white);
   --bg-preview: var(--grey-8);
-  --bg-modal: var(--grey-9);
+  --bg-modal: 196, 196, 196;
 }
 
 body {

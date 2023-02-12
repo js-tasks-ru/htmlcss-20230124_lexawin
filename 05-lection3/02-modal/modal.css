@@ -7,8 +7,7 @@
 
   display: none;
 
-  background-color: var(--bg-modal);
-  opacity: 0.5;
+  background-color: rgba(var(--bg-modal), 0.5);
 }
 
 .modal__inner {

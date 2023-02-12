@@ -16,6 +16,8 @@
   --purple: #7048e8;
   --blue: #374fc7;
   --blue-2: #4263eb;
+  --blue-3: #334d6e;
+  --blue-4: #a0b1f5;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -25,6 +27,7 @@
   --grey-6: #f3f5f5;
   --grey-7: #e3e7ea;
   --grey-8: #f9fafc;
+  --grey-9: #90a0b7;
 
   --error: var(--red);
   --success: var(--blue);

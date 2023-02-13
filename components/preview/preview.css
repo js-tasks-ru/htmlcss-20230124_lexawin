@@ -18,3 +18,18 @@
   flex: 0 1 350px;
   height: 367px;
 }
+
+@media screen and (max-width: 767px) {
+  .preview {
+    padding: 24px 0;
+  }
+
+  .preview__inner {
+    gap: 24px 16px;
+  }
+
+  .preview__card {
+    flex-basis: 164px;
+    height: 210px;
+  }
+}

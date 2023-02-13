@@ -20,3 +20,16 @@
   text-align: center;
   color: var(--black);
 }
+
+@media screen and (max-width: 767px) {
+  .card {
+    padding-bottom: 10px;
+  }
+
+  .card__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

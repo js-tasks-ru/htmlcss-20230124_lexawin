@@ -16,3 +16,10 @@
 .page__preview {
   flex-grow: 1;
 }
+
+@media screen and (max-width: 767px) {
+  .page_inner {
+    grid-template-rows: auto 1fr;
+    row-gap: 0;
+  }
+}

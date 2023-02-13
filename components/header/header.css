@@ -14,3 +14,15 @@
   font-size: 50px;
   line-height: 64px;
 }
+
+@media screen and (max-width: 767px) {
+  .header_transparent {
+    background-color: transparent;
+  }
+
+  .header__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

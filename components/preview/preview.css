@@ -27,9 +27,4 @@
   .preview__inner {
     gap: 24px 16px;
   }
-
-  .preview__card {
-    flex-basis: 164px;
-    height: 210px;
-  }
 }

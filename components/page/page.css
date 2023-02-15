@@ -22,4 +22,8 @@
     grid-template-rows: auto 1fr;
     row-gap: 0;
   }
+
+  .page__logo {
+    text-align: center;
+  }
 }

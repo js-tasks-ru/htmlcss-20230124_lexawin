@@ -13,6 +13,8 @@
 @import '../../components/component-description/component-description.css';
 @import '../../components/main/main.css';
 @import '../../components/histogram/histogram.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/calendar/calendar.css';
 
 :root {
   --white: #ffffff;

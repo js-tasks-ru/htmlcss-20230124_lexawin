@@ -24,9 +24,18 @@
 }
 
 .accordion__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   color: #212429;
 
   cursor: pointer;
+}
+
+.accordion__icon {
+  width: 24px;
+  height: 24px;
 }
 
 .accordion__item[open] > .accordion__summary {

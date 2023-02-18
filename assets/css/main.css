@@ -15,6 +15,7 @@
 @import '../../components/histogram/histogram.css';
 @import '../../components/tooltip/tooltip.css';
 @import '../../components/calendar/calendar.css';
+@import '../../components/modal/modal.css';
 
 :root {
   --white: #ffffff;

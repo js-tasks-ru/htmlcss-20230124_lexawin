@@ -1,19 +1,26 @@
 .calendar {
-  max-width: 18.75rem;
-  padding: 1.75rem 2.25rem;
+  max-width: 18.75em;
+  width: 100%;
+  padding: 1.75em 2.25em;
+
+  font-size: 16px;
 
   background-color: var(--bg-primary);
-  border: 0.0625rem solid var(--grey-3);
-  border-radius: 0.5rem;
+  border: 0.0625em solid var(--grey-3);
+  border-radius: 0.5em;
+}
+
+.calendar_small {
+  font-size: 8px;
 }
 
 .calendar__title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5m;
 
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.25em;
+  line-height: 1.5em;
   text-align: center;
   color: var(--blue-3);
 }
@@ -41,16 +48,16 @@
 
   font-family: 'Source Sans Pro';
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 1em;
+  line-height: 1.25em;
   color: var(--blue-3);
 }
 
 .calendar__item_day-of-week {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.875em;
+  line-height: 1.25em;
   color: var(--grey-9);
 }
 

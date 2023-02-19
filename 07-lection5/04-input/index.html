@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="form-group">
+      <label class="form-group__label">
+        <h3 class="form-grpoup__title">Label</h3>
+        <div class="form-group__body">
+          <input
+            class="form-group__input"
+            type="text"
+            placeholder="Placeholder"
+            name="text"
+          />
+          <svg class="form-group__icon form-group__icon-success">
+            <use href="../../assets/images/icons-sprite.svg#success"></use>
+          </svg>
+          <svg class="form-group__icon form-group__icon-invalid">
+            <use href="../../assets/images/icons-sprite.svg#error"></use>
+          </svg>
+        </div>
+      </label>
+    </div>
 
-    </body>
+    <!-- Success -->
+    <div class="form-group form-group_success">
+      <label class="form-group__label">
+        <h3 class="form-grpoup__title">Success</h3>
+        <div class="form-group__body">
+          <input
+            class="form-group__input"
+            type="text"
+            value="Success"
+            name="text"
+          />
+          <svg class="form-group__icon form-group__icon-success">
+            <use href="../../assets/images/icons-sprite.svg#success"></use>
+          </svg>
+          <svg class="form-group__icon form-group__icon-invalid">
+            <use href="../../assets/images/icons-sprite.svg#error"></use>
+          </svg>
+        </div>
+      </label>
+    </div>
+
+    <!-- Error -->
+    <div class="form-group form-group_invalid">
+      <label class="form-group__label">
+        <h3 class="form-grpoup__title">Error</h3>
+        <div class="form-group__body">
+          <input
+            class="form-group__input"
+            type="text"
+            value="Error"
+            name="text"
+          />
+          <svg class="form-group__icon form-group__icon-success">
+            <use href="../../assets/images/icons-sprite.svg#success"></use>
+          </svg>
+          <svg class="form-group__icon form-group__icon-invalid">
+            <use href="../../assets/images/icons-sprite.svg#error"></use>
+          </svg>
+        </div>
+      </label>
+    </div>
+  </body>
 </html>

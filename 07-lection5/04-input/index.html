@@ -7,65 +7,62 @@
   </head>
   <body>
     <div class="form-group">
-      <label class="form-group__label">
-        <h3 class="form-grpoup__title">Label</h3>
-        <div class="form-group__body">
-          <input
-            class="form-group__input"
-            type="text"
-            placeholder="Placeholder"
-            name="text"
-          />
-          <svg class="form-group__icon form-group__icon-success">
-            <use href="../../assets/images/icons-sprite.svg#success"></use>
-          </svg>
-          <svg class="form-group__icon form-group__icon-invalid">
-            <use href="../../assets/images/icons-sprite.svg#error"></use>
-          </svg>
-        </div>
-      </label>
+      <label class="form-group__label" for="input">Label</label>
+      <div class="form-group__body">
+        <input
+          id="input"
+          class="form-group__input"
+          type="text"
+          placeholder="Placeholder"
+          name="text"
+        />
+        <svg class="form-group__icon form-group__icon_success">
+          <use href="../../assets/images/icons-sprite.svg#success"></use>
+        </svg>
+        <svg class="form-group__icon form-group__icon_error">
+          <use href="../../assets/images/icons-sprite.svg#error"></use>
+        </svg>
+      </div>
     </div>
 
     <!-- Success -->
     <div class="form-group form-group_success">
-      <label class="form-group__label">
-        <h3 class="form-grpoup__title">Success</h3>
-        <div class="form-group__body">
-          <input
-            class="form-group__input"
-            type="text"
-            value="Success"
-            name="text"
-          />
-          <svg class="form-group__icon form-group__icon-success">
-            <use href="../../assets/images/icons-sprite.svg#success"></use>
-          </svg>
-          <svg class="form-group__icon form-group__icon-invalid">
-            <use href="../../assets/images/icons-sprite.svg#error"></use>
-          </svg>
-        </div>
-      </label>
+      <label class="form-group__label" for="success">Success</label>
+      <div class="form-group__body">
+        <input
+          id="success"
+          class="form-group__input"
+          type="text"
+          value="Success"
+          name="text"
+        />
+        <svg class="form-group__icon form-group__icon_success">
+          <use href="../../assets/images/icons-sprite.svg#success"></use>
+        </svg>
+        <svg class="form-group__icon form-group__icon_error">
+          <use href="../../assets/images/icons-sprite.svg#error"></use>
+        </svg>
+      </div>
     </div>
 
     <!-- Error -->
-    <div class="form-group form-group_invalid">
-      <label class="form-group__label">
-        <h3 class="form-grpoup__title">Error</h3>
-        <div class="form-group__body">
-          <input
-            class="form-group__input"
-            type="text"
-            value="Error"
-            name="text"
-          />
-          <svg class="form-group__icon form-group__icon-success">
-            <use href="../../assets/images/icons-sprite.svg#success"></use>
-          </svg>
-          <svg class="form-group__icon form-group__icon-invalid">
-            <use href="../../assets/images/icons-sprite.svg#error"></use>
-          </svg>
-        </div>
-      </label>
+    <div class="form-group form-group_error">
+      <label class="form-group__label" for="error">Error</label>
+      <div class="form-group__body">
+        <input
+          id="error"
+          class="form-group__input"
+          type="text"
+          value="Error"
+          name="text"
+        />
+        <svg class="form-group__icon form-group__icon_success">
+          <use href="../../assets/images/icons-sprite.svg#success"></use>
+        </svg>
+        <svg class="form-group__icon form-group__icon_error">
+          <use href="../../assets/images/icons-sprite.svg#error"></use>
+        </svg>
+      </div>
     </div>
   </body>
 </html>

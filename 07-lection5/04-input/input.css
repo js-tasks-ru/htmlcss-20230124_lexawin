@@ -1,7 +1,8 @@
 .form-group {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
 }
-.form-grpoup__title {
+.form-group__label {
   margin: 0 0 5px;
 
   font-family: 'Inter', sans-serif;
@@ -15,8 +16,6 @@
 
 .form-group__body {
   position: relative;
-
-  display: inline-block;
 }
 
 .form-group__input {
@@ -57,13 +56,13 @@
   height: 24px;
 }
 
-.form-group_success .form-group__icon-success {
+.form-group_success .form-group__icon_success {
   display: block;
 
   color: var(--blue);
 }
 
-.form-group_invalid .form-group__icon-invalid {
+.form-group_error .form-group__icon_error {
   display: block;
 
   color: var(--red);
@@ -74,7 +73,7 @@
   border-color: var(--blue);
 }
 
-.form-group_invalid .form-group__input,
-.form-group_invalid .form-group__input:focus {
+.form-group_error .form-group__input,
+.form-group_error .form-group__input:focus {
   border-color: var(--red);
 }

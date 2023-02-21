@@ -73,3 +73,26 @@
 .button_alternate:active {
   border-color: #acb5bd;
 }
+
+/* Icon */
+.button_icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  min-width: fit-content;
+  height: fit-content;
+
+  background-color: transparent;
+
+  border-radius: 0;
+  border: none;
+}
+
+.button_icon:hover {
+  background-color: var(--grey-2);
+}
+
+.button_icon:active {
+  background-color: var(--grey-3);
+}

@@ -1,0 +1,60 @@
+.tabs {
+  position: relative;
+}
+
+.tabs__input {
+  position: absolute;
+
+  clip: rect(0, 0, 0, 0);
+
+  outline: none;
+}
+
+.tabs__label-wrapper {
+  display: flex;
+  gap: 40px;
+
+  overflow-x: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tabs__label-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs__label {
+  padding-bottom: 8px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  white-space: pre;
+
+  border-bottom: 5px solid transparent;
+
+  cursor: pointer;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__label:hover,
+.tabs__input_all:checked ~ .tabs__scroller .tabs__label_all,
+.tabs__input_elements:checked ~ .tabs__scroller .tabs__label_elements,
+.tabs__input_containers:checked ~ .tabs__scroller .tabs__label_containers,
+.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.tabs__input_all:checked ~ .tabs__content_all,
+.tabs__input_elements:checked ~ .tabs__content_elements,
+.tabs__input_containers:checked ~ .tabs__content_containers,
+.tabs__input_templates:checked ~ .tabs__content_templates {
+  display: block;
+}

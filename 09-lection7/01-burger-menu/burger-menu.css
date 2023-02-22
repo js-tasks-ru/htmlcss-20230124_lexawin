@@ -21,10 +21,10 @@
   height: 24px;
 }
 
-.burger-menu_close {
+.burger-menu__close {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 16px;
+  left: 16px;
 
   width: 32px;
   height: 32px;
@@ -35,11 +35,12 @@
 
 .burger-menu__logo {
   position: relative;
+  padding: 16px;
 }
 
 .burger-menu__section {
   display: block;
-  padding: 24px 0;
+  padding: 24px 16px;
   border-top: 1px solid var(--grey-2);
 }
 

@@ -31,6 +31,8 @@
   align-items: center;
 
   flex-grow: 1;
+
+  pointer-events: none;
 }
 
 .card__content_column {

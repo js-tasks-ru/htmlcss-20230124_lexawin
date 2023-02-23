@@ -10,6 +10,7 @@
   font-size: 16px;
 
   background-color: rgba(var(--bg-modal), 0.5);
+  z-index: 1;
 }
 
 .modal__inner {

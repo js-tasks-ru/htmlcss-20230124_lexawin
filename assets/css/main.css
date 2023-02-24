@@ -27,10 +27,12 @@
   --black-2: #000000;
   --pink: #f784ad;
   --purple: #7048e8;
+  --purple-2: #5028c6;
   --blue: #374fc7;
   --blue-2: #4263eb;
   --blue-3: #334d6e;
   --blue-4: #a0b1f5;
+  --blue-5: #2342c0;
   --red: #f03d3e;
   --red-2: #d84910;
   --grey-1: #f8f9fa;
@@ -47,8 +49,15 @@
   --error: var(--red);
   --success: var(--blue);
 
-  --primary: var(--blue);
-  --secondary: var(--purple);
+  --btn-primary: var(--blue);
+  --btn-primary-hover: var(--blue-5);
+  --btn-secondary: var(--purple);
+  --btn-secondary-hover: var(--purple-2);
+  --button-alternate: var(--grey-3);
+  --button-alternate-hover: var(--black);
+  --btn-icon-hover: var(--grey-2);
+  --btn-text: var(--white);
+  --btn-text-alternate: var(--grey-4);
 
   --bg-primary: var(--white);
   --bg-preview: var(--grey-8);

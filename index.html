@@ -93,7 +93,7 @@
           <main class="preview page__preview">
             <div class="container">
               <div class="preview__inner">
-                <div class="card preview__card">
+                <a href="#" class="card preview__card">
                   <h4 class="card__title">Tooltip</h4>
                   <div class="card__content">
                     <div class="tooltip">
@@ -106,12 +106,108 @@
                       <div class="tooltip__bubble">Helper Text</div>
                     </div>
                   </div>
-                </div>
-                <div class="card preview__card">
+                </a>
+                <a href="#" class="card preview__card">
                   <h4 class="card__title">Custom form elements</h4>
-                  <div class="card__content"></div>
-                </div>
-                <div class="card preview__card">
+                  <div class="card__content card__content_column">
+                    <label class="checkbox">
+                      <input
+                        tabindex="-1"
+                        type="checkbox"
+                        class="checkbox__input"
+                      />
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                            <use
+                              href="../../assets/images/icons-sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="checkbox__title">Default</div>
+                      </div>
+                    </label>
+
+                    <label class="radio">
+                      <input tabindex="-1" type="radio" class="radio__input" />
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__dot"></div>
+                        </div>
+                        <div class="radio__title">Default</div>
+                      </div>
+                    </label>
+
+                    <label class="checkbox">
+                      <input
+                        tabindex="-1"
+                        type="checkbox"
+                        class="checkbox__input"
+                        checked
+                      />
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                            <use
+                              href="../../assets/images/icons-sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="checkbox__title">Checked</div>
+                      </div>
+                    </label>
+
+                    <label class="radio">
+                      <input
+                        tabindex="-1"
+                        type="radio"
+                        class="radio__input"
+                        checked
+                      />
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__dot"></div>
+                        </div>
+                        <div class="radio__title">Selected</div>
+                      </div>
+                    </label>
+
+                    <label class="checkbox">
+                      <input
+                        tabindex="-1"
+                        type="checkbox"
+                        class="checkbox__input"
+                        disabled
+                      />
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                            <use
+                              href="../../assets/images/icons-sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="checkbox__title">Disabled</div>
+                      </div>
+                    </label>
+
+                    <label class="radio">
+                      <input
+                        tabindex="-1"
+                        type="radio"
+                        class="radio__input"
+                        disabled
+                      />
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__dot"></div>
+                        </div>
+                        <div class="radio__title">Disabled</div>
+                      </div>
+                    </label>
+                  </div>
+                </a>
+                <a href="#" class="card preview__card">
                   <h4 class="card__title">Calendar</h4>
                   <div class="card__content">
                     <div class="calendar calendar_small">
@@ -211,13 +307,14 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card preview__card">
+                </a>
+                <a href="#" class="card preview__card">
                   <h4 class="card__title">Modal dialog</h4>
                   <div class="card__content">
                     <div id="modal" class="modal modal_small">
                       <div class="modal__inner">
                         <button
+                          tabindex="-1"
                           id="modal-close"
                           class="button button_alternate modal__modal-close"
                         >
@@ -240,14 +337,14 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card preview__card">
+                </a>
+                <a href="#" class="card preview__card">
                   <h4 class="card__title">Histogram</h4>
                   <div class="card__content">
                     <div class="histogram">
                       <header class="histogram__header">
                         <h5 class="histogram__title">Total orders</h5>
-                        <a href="#" class="histogram__link">View all</a>
+                        <span class="histogram__link">View all</span>
                       </header>
                       <p class="histogram__total-count">50254</p>
                       <div class="histogram__bars">
@@ -284,8 +381,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card preview__card">
+                </a>
+                <a href="#" class="card preview__card">
                   <h4 class="card__title">Avatar</h4>
                   <div class="card__content">
                     <div class="avatar">
@@ -296,7 +393,7 @@
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </main>

@@ -1,5 +1,7 @@
 .toggler {
   display: inline-flex;
+
+  --animation-duration: 0.3s;
 }
 
 .toggler__input {
@@ -17,34 +19,44 @@
 }
 
 .toggler__control {
+  position: relative;
+
   box-sizing: border-box;
   width: 52px;
   height: 28px;
   padding: 1px;
-  display: flex;
-  align-items: center;
 
   background-color: var(--bg-primary);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
+
+  transition: background-color var(--animation-duration) ease-in-out,
+    border-color var(--animation-duration) ease-in-out;
 }
 
 .toggler__switcher {
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%);
+
   width: 24px;
   height: 24px;
 
   background-color: var(--grey-2);
   border-radius: 16px;
+
+  transition: transform var(--animation-duration) ease-in-out,
+    background-color var(--animation-duration) ease-in-out;
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control {
-  justify-content: flex-end;
-
   background-color: var(--blue-2);
   border-color: var(--blue-2);
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__switcher {
+  transform: translate(100%, -50%);
   background-color: var(--bg-primary);
 }
 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component page</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <div class="page page_inner">
+      <header class="header header_transparent">
+        <div class="container">
+          <a href="/index.html" class="page__logo">
+            <svg
+              width="110"
+              height="32"
+              viewBox="0 0 110 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429" />
+                <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+                <path d="M78 0L110 32H78V0Z" fill="#212429" />
+              </g>
+              <defs>
+                <clipPath id="clip0_17869_61">
+                  <rect width="110" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="component-main">
+            <div class="menu">
+              <h2 class="menu__header">Components</h2>
+              <nav class="menu__navigation">
+                <a href="modal.html" class="menu__item">Modal</a>
+                <a href="tooltip.html" class="menu__item">Tooltip</a>
+                <a href="avatar.html" class="menu__item menu__item_active"
+                  >Avatar</a
+                >
+                <a href="calendar.html" class="menu__item">Calendar</a>
+                <a href="histogram.html" class="menu__item">Histogram</a>
+                <a href="custom-form-elements.html" class="menu__item"
+                  >Custom form elements</a
+                >
+              </nav>
+              <p>
+                <a href="/index.html" class="menu__item">Main page</a>
+              </p>
+            </div>
+
+            <div class="component-description">
+              <h3 class="component-description__title">Avatar</h3>
+              <div class="component-description__content">
+                <div class="avatar">
+                  <img
+                    src="../../assets/images/ellipse.png"
+                    alt="A man is looking at us through a camera lens."
+                    class="avatar__image"
+                  />
+                </div>
+              </div>
+
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tabs"
+                  id="#html-tab"
+                  class="tabs__input tabs__input_html"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="tabs"
+                  id="#css-tab"
+                  class="tabs__input tabs__input_css"
+                />
+
+                <div
+                  class="tabs__scroller component-description__tabs-scroller"
+                >
+                  <div class="tabs__label-wrapper">
+                    <label class="tabs__label tabs__label_html" for="#html-tab"
+                      >HTML</label
+                    >
+                    <label class="tabs__label tabs__label_css" for="#css-tab"
+                      >CSS</label
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="tabs__content tabs__content_html component-description__tabs-content"
+                >
+                  <pre><code>&lt;div class=&quot;avatar&quot;&gt;
+  &lt;img
+    src=&quot;../../assets/images/ellipse.png&quot;
+    alt=&quot;A man is looking at us through a camera lens.&quot;
+    class=&quot;avatar__image&quot;
+  /&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <div
+                  class="tabs__content tabs__content_css component-description__tabs-content"
+                >
+                  <pre><code>.avatar {
+  width: 102px;
+  height: 102px;
+}
+
+.avatar__image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer footer_transparent">
+        <div class="container">
+          <p class="footer__text footer__text_upper">
+            Reusable component library
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

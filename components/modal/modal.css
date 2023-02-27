@@ -10,6 +10,7 @@
   font-size: 16px;
 
   background-color: rgba(var(--bg-modal), 0.5);
+  z-index: 1;
 }
 
 .modal__inner {
@@ -19,7 +20,7 @@
   transform: translate(-50%, -50%);
 
   min-width: 26.75em;
-  padding: 1.875em 2.5rem;
+  padding: 1.875em 2.5em;
 
   background-color: var(--bg-primary);
   border-radius: 0.5em;
@@ -29,13 +30,6 @@
   position: absolute;
   right: 0.75em;
   top: 0.75em;
-
-  min-width: fit-content;
-  height: fit-content;
-  padding: 0;
-
-  border-radius: 0;
-  border: none;
 }
 
 .modal__title {
@@ -57,9 +51,8 @@
 }
 
 .modal__close-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .modal_small {

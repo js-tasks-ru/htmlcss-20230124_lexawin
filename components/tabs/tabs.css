@@ -47,7 +47,9 @@
 .tabs__input_all:checked ~ .tabs__scroller .tabs__label_all,
 .tabs__input_elements:checked ~ .tabs__scroller .tabs__label_elements,
 .tabs__input_containers:checked ~ .tabs__scroller .tabs__label_containers,
-.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates {
+.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates,
+.tabs__input_html:checked ~ .tabs__scroller .tabs__label_html,
+.tabs__input_css:checked ~ .tabs__scroller .tabs__label_css {
   color: var(--black);
   border-color: var(--black);
 }
@@ -55,6 +57,8 @@
 .tabs__input_all:checked ~ .tabs__content_all,
 .tabs__input_elements:checked ~ .tabs__content_elements,
 .tabs__input_containers:checked ~ .tabs__content_containers,
-.tabs__input_templates:checked ~ .tabs__content_templates {
+.tabs__input_templates:checked ~ .tabs__content_templates,
+.tabs__input_html:checked ~ .tabs__content_html,
+.tabs__input_css:checked ~ .tabs__content_css {
   display: block;
 }

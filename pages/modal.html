@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component page</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <div class="page page_inner">
+      <header class="header header_transparent">
+        <div class="container">
+          <a href="/index.html" class="page__logo">
+            <svg
+              width="110"
+              height="32"
+              viewBox="0 0 110 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429" />
+                <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+                <path d="M78 0L110 32H78V0Z" fill="#212429" />
+              </g>
+              <defs>
+                <clipPath id="clip0_17869_61">
+                  <rect width="110" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="component-main">
+            <div class="menu">
+              <h2 class="menu__header">Components</h2>
+              <nav class="menu__navigation">
+                <a href="modal.html" class="menu__item menu__item_active"
+                  >Modal</a
+                >
+                <a href="tooltip.html" class="menu__item">Tooltip</a>
+                <a href="avatar.html" class="menu__item">Avatar</a>
+                <a href="calendar.html" class="menu__item">Calendar</a>
+                <a href="histogram.html" class="menu__item">Histogram</a>
+                <a href="custom-form-elements.html" class="menu__item"
+                  >Custom form elements</a
+                >
+              </nav>
+              <p>
+                <a href="/index.html" class="menu__item">Main page</a>
+              </p>
+            </div>
+
+            <div class="component-description">
+              <h3 class="component-description__title">Modal</h3>
+              <div class="component-description__content">
+                <button id="modal-open" class="button button_primary">
+                  Open modal
+                </button>
+                <div id="modal" class="modal">
+                  <div class="modal__inner">
+                    <div class="modal__modal-close">
+                      <button id="modal-close" class="button button_icon">
+                        <svg class="modal__close-icon">
+                          <use
+                            href="../../assets/images/icons-sprite.svg#close"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="modal__title">Modal title</div>
+                    <div class="modal__content">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet. Amet minim mollit non deserunt ullamco est sit
+                      aliqua dolor do amet sint. Velit officia consequat duis
+                      enim velit mollit. Exercitation veniam consequat sunt
+                      nostrud amet.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tabs"
+                  id="#html-tab"
+                  class="tabs__input tabs__input_html"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="tabs"
+                  id="#css-tab"
+                  class="tabs__input tabs__input_css"
+                />
+
+                <div
+                  class="tabs__scroller component-description__tabs-scroller"
+                >
+                  <div class="tabs__label-wrapper">
+                    <label class="tabs__label tabs__label_html" for="#html-tab"
+                      >HTML</label
+                    >
+                    <label class="tabs__label tabs__label_css" for="#css-tab"
+                      >CSS</label
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="tabs__content tabs__content_html component-description__tabs-content"
+                >
+                  <pre><code>&lt;button id=&quot;modal-open&quot; class=&quot;button button_primary&quot;&gt;
+  Open modal
+&lt;/button&gt;
+&lt;div id=&quot;modal&quot; class=&quot;modal&quot;&gt;
+  &lt;div class=&quot;modal__inner&quot;&gt;
+    &lt;button
+      id=&quot;modal-close&quot;
+      class=&quot;button button_icon modal__modal-close&quot;
+    &gt;
+      &lt;svg class=&quot;modal__close-icon&quot;&gt;
+        &lt;use
+          href=&quot;../../assets/images/icons-sprite.svg#close&quot;
+        &gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;modal__title&quot;&gt;Modal title&lt;/div&gt;
+    &lt;div class=&quot;modal__content&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua
+      dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud
+      amet. Amet minim mollit non deserunt ullamco est sit
+      aliqua dolor do amet sint. Velit officia consequat duis
+      enim velit mollit. Exercitation veniam consequat sunt
+      nostrud amet.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <div
+                  class="tabs__content tabs__content_css component-description__tabs-content"
+                >
+                  <pre><code>.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: none;
+
+  font-size: 16px;
+
+  background-color: rgba(var(--bg-modal), 0.5);
+  z-index: 1;
+}
+
+.modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 26.75em;
+  padding: 1.875em 2.5rem;
+
+  background-color: var(--bg-primary);
+  border-radius: 0.5em;
+}
+
+.modal__modal-close {
+  position: absolute;
+  right: 0.75em;
+  top: 0.75em;
+
+  min-width: fit-content;
+  height: fit-content;
+  padding: 0;
+
+  border-radius: 0;
+  border: none;
+}
+
+.modal__title {
+  margin-bottom: 0.875em;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: var(--grey-10);
+}
+
+.modal__content {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: var(--grey-4);
+}
+
+.modal__close-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.modal_small {
+  position: absolute;
+  display: block;
+
+  font-size: 6px;
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer footer_transparent">
+        <div class="container">
+          <p class="footer__text footer__text_upper">
+            Reusable component library
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../components/modal/index.js"></script>
+</html>

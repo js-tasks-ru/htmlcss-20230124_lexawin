@@ -494,7 +494,7 @@
         fill="#212429"
       />
     </symbol>
-    <symbol id="close">
+    <symbol id="close" viewBox="0 0 24 24">
       <path
         d="M18 6L6 18"
         stroke="#212429"

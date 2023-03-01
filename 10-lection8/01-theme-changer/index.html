@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <!-- Пример использования theme-changer -->
-<html lang="ru">
-    <head>
-        <style>
-            html[data-theme-dark] {
-                background: #000;
-            }
-        </style>
-        <script defer src="./theme-changer.js"></script>
-    </head>
-    <body>
-        <input type="checkbox" id="theme-changer">
-    </body>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./theme-changer.css" />
+    <style>
+      html[data-theme-dark] {
+        background: #000;
+      }
+    </style>
+    <script defer src="./theme-changer.js"></script>
+  </head>
+  <body>
+    <div class="theme-changer">
+      <svg class="theme-changer__icon">
+        <use href="../../assets/images/icons-sprite.svg#sun"></use>
+      </svg>
+
+      <label class="toggler">
+        <input type="checkbox" id="theme-changer" class="toggler__input" />
+        <div class="toggler__state">
+          <div class="toggler__control">
+            <div class="toggler__switcher"></div>
+          </div>
+        </div>
+      </label>
+
+      <svg class="theme-changer__icon">
+        <use href="../../assets/images/icons-sprite.svg#moon"></use>
+      </svg>
+    </div>
+  </body>
 </html>

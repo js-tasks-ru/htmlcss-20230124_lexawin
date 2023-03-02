@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Reusable component library</title>
+    <script defer src="./components/theme-changer/theme-changer.js"></script>
   </head>
   <body>
     <div class="page">
@@ -15,6 +16,29 @@
             <svg viewBox="0 0 110 32" class="logo">
               <use href="../assets/images/icons-sprite.svg#logo"></use>
             </svg>
+
+            <div class="theme-changer">
+              <svg class="theme-changer__icon">
+                <use href="../../assets/images/icons-sprite.svg#sun"></use>
+              </svg>
+
+              <label class="toggler">
+                <input
+                  type="checkbox"
+                  id="theme-changer"
+                  class="toggler__input"
+                />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__switcher"></div>
+                  </div>
+                </div>
+              </label>
+
+              <svg class="theme-changer__icon">
+                <use href="../../assets/images/icons-sprite.svg#moon"></use>
+              </svg>
+            </div>
           </div>
           <h1 class="header__title page__header-title">
             Reusable component library

@@ -24,6 +24,7 @@
 @import '../../components/toggler/toggler.css';
 @import '../../components/input/input.css';
 @import '../../components/logo/logo.css';
+@import '../../components/theme-changer/theme-changer.css';
 
 :root {
   --white: #ffffff;
@@ -66,6 +67,13 @@
   --bg-primary: var(--white);
   --bg-preview: var(--grey-8);
   --bg-modal: 196, 196, 196;
+
+  --text-primary: var(--black);
+  --text-secondary: var(--black-2);
+  --text-alternate: var(--grey-3);
+  --text-input: var(--grey-4);
+
+  --border-primary: var(--black);
 }
 
 body {
@@ -75,4 +83,15 @@ body {
 html,
 body {
   height: 100%;
+}
+
+html[data-theme-dark] {
+  --bg-primary: var(--black);
+  --bg-preview: var(--grey-4);
+
+  --text-primary: var(--white);
+  --text-secondary: var(--grey-3);
+  --text-input: var(--grey-1);
+
+  --border-primary: var(--white);
 }

@@ -28,6 +28,7 @@
 
 :root {
   --white: #ffffff;
+  --white-2: #ffffff75;
   --black: #212429;
   --black-2: #000000;
   --pink: #f784ad;
@@ -72,6 +73,7 @@
   --text-secondary: var(--black-2);
   --text-alternate: var(--grey-3);
   --text-input: var(--grey-4);
+  --text-modal: var(--grey-4);
 
   --border-primary: var(--black);
 }
@@ -89,9 +91,10 @@ html[data-theme-dark] {
   --bg-primary: var(--black);
   --bg-preview: var(--grey-4);
 
-  --text-primary: var(--white);
+  --text-primary: var(--white-2);
   --text-secondary: var(--grey-3);
-  --text-input: var(--grey-1);
+  --text-input: var(--white-2);
+  --text-modal: var(--white-2);
 
-  --border-primary: var(--white);
+  --border-primary: var(--white-2);
 }

@@ -11,7 +11,7 @@
   line-height: 18px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--grey-3);
+  color: var(--text-alternate);
 }
 
 .form-group__body {

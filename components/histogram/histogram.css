@@ -1,8 +1,9 @@
 .histogram {
   padding: 16px 24px 24px;
+  width: 100%;
 
   font-family: 'Inter', sans-serif;
-  color: var(--black);
+  color: var(--text-primary);
 
   background-color: var(--bg-primary);
   border: 1px solid var(--grey-3);

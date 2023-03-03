@@ -1,6 +1,5 @@
 .histogram {
   padding: 16px 24px 24px;
-  width: 100%;
 
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
@@ -8,6 +7,10 @@
   background-color: var(--bg-primary);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+}
+
+.histogram_full {
+  width: 100%;
 }
 
 .histogram__header {

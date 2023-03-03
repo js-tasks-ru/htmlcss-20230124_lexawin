@@ -35,6 +35,10 @@
   border-radius: 10px;
 }
 
+.tootip_preview .tooltip__bubble {
+  display: block;
+}
+
 .tooltip__bubble::before {
   content: '';
   position: absolute;

@@ -73,6 +73,7 @@
   --text-secondary: var(--black-2);
   --text-alternate: var(--grey-3);
   --text-input: var(--grey-4);
+  --text-input-placeholder: var(--grey-2);
   --text-modal: var(--grey-4);
 
   --border-primary: var(--black);
@@ -94,7 +95,10 @@ html[data-theme-dark] {
   --text-primary: var(--white-2);
   --text-secondary: var(--grey-3);
   --text-input: var(--white-2);
+  --text-input-placeholder: var(--grey-4);
   --text-modal: var(--white-2);
 
   --border-primary: var(--white-2);
+
+  --btn-icon-hover: var(--grey-4);
 }

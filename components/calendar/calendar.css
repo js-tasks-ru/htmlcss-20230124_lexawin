@@ -68,5 +68,7 @@
 }
 
 .calendar__item_between-active {
+  color: var(--white);
+
   background-color: var(--blue-4);
 }

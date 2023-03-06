@@ -22,7 +22,7 @@
   font-size: 1.25em;
   line-height: 1.5em;
   text-align: center;
-  color: var(--blue-3);
+  color: var(--text-primary);
 }
 
 .calndar__wrapper {
@@ -50,7 +50,7 @@
   font-weight: 400;
   font-size: 1em;
   line-height: 1.25em;
-  color: var(--blue-3);
+  color: var(--text-primary);
 }
 
 .calendar__item_day-of-week {
@@ -58,7 +58,7 @@
   font-weight: 400;
   font-size: 0.875em;
   line-height: 1.25em;
-  color: var(--grey-9);
+  color: var(--text-alternate);
 }
 
 .calendar__item_active {
@@ -68,5 +68,7 @@
 }
 
 .calendar__item_between-active {
+  color: var(--white);
+
   background-color: var(--blue-4);
 }

@@ -52,7 +52,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--text-input);
 }
 
 .radio__input:disabled ~ .radio__state {

@@ -50,7 +50,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--text-input);
 }
 
 .checkbox__input:disabled ~ .checkbox__state {

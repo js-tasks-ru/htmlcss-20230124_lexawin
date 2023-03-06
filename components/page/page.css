@@ -15,6 +15,12 @@
   flex-grow: 1;
 }
 
+.page__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .page_inner {
     grid-template-rows: auto 1fr;
@@ -22,6 +28,6 @@
   }
 
   .page__logo {
-    text-align: center;
+    justify-content: center;
   }
 }

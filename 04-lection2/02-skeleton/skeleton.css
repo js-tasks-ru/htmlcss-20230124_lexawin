@@ -1,9 +1,21 @@
 .skeleton {
+  --animation: skeleton 1s linear infinite;
+
   padding: 24px 40px 32px 24px;
 
   background: var(--bg-primary);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
 }
 
 .skeleton__top {
@@ -17,8 +29,18 @@
   width: 64px;
   height: 64px;
 
-  background-color: var(--grey-2);
   border-radius: 50%;
+  background: linear-gradient(
+    92.51deg,
+    var(--grey-2) 6.44%,
+    var(--grey-5) 38.47%,
+    var(--grey-6) 56.48%,
+    var(--grey-7) 77.5%,
+    var(--grey-2) 102.52%
+  );
+  background-size: 200%;
+
+  animation: var(--animation);
 }
 
 .skeleton__top-bars {
@@ -40,6 +62,9 @@
     var(--grey-7) 77.5%,
     var(--grey-2) 102.52%
   );
+  background-size: 200%;
+
+  animation: var(--animation);
 }
 
 .skeleton__bar:last-child {

@@ -102,3 +102,10 @@ html[data-theme-dark] {
 
   --btn-icon-hover: var(--grey-4);
 }
+
+.preload *,
+.preload ::before,
+.preload ::after {
+  transition: none !important;
+  animation: none !important;
+}

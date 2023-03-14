@@ -1,0 +1,16 @@
+.theme-changer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    color: var(--grey-3);
+  }
+}

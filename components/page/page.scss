@@ -1,0 +1,31 @@
+.page {
+  display: flex;
+  flex-direction: column;
+
+  &_inner {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 36px;
+
+    background-color: var(--bg-preview);
+
+    @media screen and (max-width: 767px) {
+      grid-template-rows: auto 1fr;
+      row-gap: 0;
+    }
+  }
+
+  &__preview {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+}

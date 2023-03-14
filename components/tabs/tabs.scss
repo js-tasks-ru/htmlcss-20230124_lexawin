@@ -1,0 +1,66 @@
+.tabs {
+  position: relative;
+
+  background-color: var(--bg-primary);
+
+  &__input {
+    position: absolute;
+
+    clip: rect(0, 0, 0, 0);
+
+    outline: none;
+  }
+
+  &__label-wrapper {
+    display: flex;
+    gap: 40px;
+
+    overflow-x: auto;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &__label-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__label {
+    padding-bottom: 8px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-alternate);
+    white-space: pre;
+
+    border-bottom: 5px solid transparent;
+
+    cursor: pointer;
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &__label:hover,
+  &__input_all:checked ~ &__scroller &__label_all,
+  &__input_elements:checked ~ &__scroller &__label_elements,
+  &__input_containers:checked ~ &__scroller &__label_containers,
+  &__input_templates:checked ~ &__scroller &__label_templates,
+  &__input_html:checked ~ &__scroller &__label_html,
+  &__input_css:checked ~ &__scroller &__label_css {
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+  }
+
+  &__input_all:checked ~ &__content_all,
+  &__input_elements:checked ~ &__content_elements,
+  &__input_containers:checked ~ &__content_containers,
+  &__input_templates:checked ~ &__content_templates,
+  &__input_html:checked ~ &__content_html,
+  &__input_css:checked ~ &__content_css {
+    display: block;
+  }
+}

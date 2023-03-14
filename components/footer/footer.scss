@@ -1,0 +1,50 @@
+.footer {
+  padding: 71px 0 136px;
+
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+
+  background-color: var(--bg-primary);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &_transparent {
+    background-color: transparent;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--grey-3);
+
+    &_upper {
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+}

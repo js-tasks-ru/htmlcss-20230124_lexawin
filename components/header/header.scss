@@ -1,0 +1,34 @@
+.header {
+  padding: 24px 0 24px;
+
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+
+  background-color: var(--bg-primary);
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0 16px;
+  }
+
+  &__title {
+    margin-top: 38px;
+    margin-bottom: 61px;
+
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 48px;
+      margin-bottom: 53px;
+
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  &_transparent {
+    background-color: transparent;
+  }
+}

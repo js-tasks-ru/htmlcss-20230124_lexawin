@@ -1,0 +1,83 @@
+/* Стилизация кнопки */
+.button {
+  min-width: 189px;
+  height: 48px;
+  padding: 15px 8px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--btn-text);
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
+    border 200ms ease-in-out, transform 200ms ease-in-out;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  &:active {
+    position: relative;
+    transform: translateY(1px);
+  }
+
+  /* Primary */
+  &_primary {
+    background-color: var(--btn-primary);
+    border: none;
+
+    &:hover {
+      background-color: var(--btn-primary-hover);
+    }
+  }
+
+  /* Secondary */
+  &_secondary {
+    background-color: var(--btn-secondary);
+    border: none;
+
+    &:hover {
+      background-color: var(--btn-secondary-hover);
+    }
+  }
+
+  /* Alternate */
+  &_alternate {
+    color: var(--btn-text-alternate);
+
+    background-color: var(--bg-primary);
+    border: 1px solid var(--button-alternate);
+
+    &:hover {
+      border-color: var(--button-alternate-hover);
+    }
+  }
+
+  /* Icon */
+  &_icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-width: fit-content;
+    height: fit-content;
+
+    font-size: 1em;
+    line-height: 1.1875em;
+
+    background-color: transparent;
+
+    border-radius: 0;
+    border: none;
+
+    &:hover {
+      background-color: var(--btn-icon-hover);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.form-group {
+  display: inline-flex;
+  flex-direction: column;
+
+  &__label {
+    margin: 0 0 5px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-alternate);
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    padding: 17px 60px 13px 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--text-input);
+
+    background: var(--bg-primary);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+
+    outline: none;
+
+    transition: border-color 0.3s ease-in-out;
+
+    &::placeholder {
+      color: var(--text-input-placeholder);
+    }
+
+    &:focus,
+    &:active {
+      border-color: var(--blue-2);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(0, -50%);
+
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  &_success &__icon_success {
+    display: block;
+
+    color: var(--blue);
+  }
+
+  &_error &__icon_error {
+    display: block;
+
+    color: var(--red);
+  }
+
+  &_success &__input,
+  &_success &__input:focus {
+    border-color: var(--blue);
+  }
+
+  &_error &__input,
+  &_error &__input:focus {
+    border-color: var(--red);
+  }
+}

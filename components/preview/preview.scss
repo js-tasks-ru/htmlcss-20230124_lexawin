@@ -1,0 +1,30 @@
+.preview {
+  padding: 68px 0;
+
+  background-color: var(--bg-preview);
+
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
+
+  @media screen and (max-width: 767px) {
+    padding: 24px 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    @media screen and (max-width: 767px) {
+      gap: 24px 16px;
+    }
+  }
+
+  &__card {
+    flex: 0 1 350px;
+    height: 367px;
+
+    text-decoration: none;
+  }
+}

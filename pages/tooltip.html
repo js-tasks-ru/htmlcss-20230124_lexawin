@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component page</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../dist/styles.css" />
     <script defer src="../components/theme-changer/theme-changer.js"></script>
     <script defer src="../assets/js/preload-remove.js"></script>
   </head>
@@ -71,7 +71,7 @@
               <h3 class="component-description__title">Tooltip</h3>
               <div class="component-description__content">
                 <div class="tooltip component-description__tooltip">
-                  <svg class="tootip__trigger">
+                  <svg class="tooltip__trigger">
                     <use href="../../assets/images/icons-sprite.svg#help"></use>
                   </svg>
 
@@ -111,7 +111,7 @@
                   class="tabs__content tabs__content_html component-description__tabs-content"
                 >
                   <pre><code>&lt;div class=&quot;tooltip&quot;&gt;
-&lt;svg class=&quot;tootip__trigger&quot;&gt;
+&lt;svg class=&quot;tooltip__trigger&quot;&gt;
   &lt;use href=&quot;../../assets/images/icons-sprite.svg#help&quot;&gt;&lt;/use&gt;
 &lt;/svg&gt;
               
@@ -127,7 +127,7 @@ position: relative;
 display: inline-block;
 }
 
-.tootip__trigger {
+.tooltip__trigger {
 width: 24px;
 height: 24px;
 
@@ -168,7 +168,7 @@ border-right: 7px solid transparent;
 border-top: 7px solid var(--blue-2);
 }
 
-.tootip__trigger:hover ~ .tooltip__bubble {
+.tooltip__trigger:hover ~ .tooltip__bubble {
 display: block;
 }
 </code></pre>
